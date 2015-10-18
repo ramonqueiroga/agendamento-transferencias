@@ -3,7 +3,7 @@ package br.com.reservafacil.teste.modelo;
 import java.math.BigDecimal;
 import java.util.Date;
 
-import br.com.reservafacil.teste.enums.TipoTaxaEnum;
+import br.com.reservafacil.teste.enums.TipoTransferenciaEnum;
 
 public class Transferencia {
 
@@ -13,7 +13,7 @@ public class Transferencia {
 	private BigDecimal taxa;
 	private Date dataAgendamento;
 	private Date dataCadastro = new Date();
-	private TipoTaxaEnum tipoTaxaEnum;
+	private TipoTransferenciaEnum tipoTransferenciaEnum;
 
 	public String getContaOrigem() {
 		return contaOrigem;
@@ -31,12 +31,12 @@ public class Transferencia {
 		this.contaDestino = contaDestino;
 	}
 
-	public TipoTaxaEnum getTipoTaxaEnum() {
-		return tipoTaxaEnum;
+	public TipoTransferenciaEnum getTipoTransferenciaEnum() {
+		return tipoTransferenciaEnum;
 	}
 
-	public void setTipoTaxaEnum(TipoTaxaEnum tipoTaxaEnum) {
-		this.tipoTaxaEnum = tipoTaxaEnum;
+	public void setTipoTransferenciaEnum(TipoTransferenciaEnum tipoTransferenciaEnum) {
+		this.tipoTransferenciaEnum = tipoTransferenciaEnum;
 	}
 
 	public BigDecimal getValor() {

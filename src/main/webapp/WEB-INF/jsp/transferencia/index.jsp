@@ -21,10 +21,10 @@
 		<label for="dataAgendamento">Data do agendamento:</label>
 		<input type="text" name="transferencia.dataAgendamento" id="dataAgendamento" /><br/>
 	
-		<label for="tipoTaxa">Tipo de taxa</label>
-		<select name="transferencia.tipoTaxaEnum">
-	 		<c:forEach items="${tiposTaxa}" var="taxa">  
-				<option value="${taxa}">${taxa.tipo}</option>  
+		<label for="tipoTransferencia">Tipo de taxa</label>
+		<select name="transferencia.tipoTransferenciaEnum">
+	 		<c:forEach items="${tiposTransferencia}" var="tipo">  
+				<option value="${tipo}">${tipo.tipo}</option>  
             </c:forEach>
 		</select>
 		
