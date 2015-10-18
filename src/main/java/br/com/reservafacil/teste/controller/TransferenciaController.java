@@ -36,7 +36,7 @@ public class TransferenciaController {
 	}
 	
 	public void adicionaTransferencia(Transferencia transferencia){
-		ITipoCalculo tipoCalculo = TipoCalculoFactory.getTipoCalculo(transferencia.getTipoTransferenciaEnum(), transferencia.getValor());
+		ITipoCalculo tipoCalculo = TipoCalculoFactory.getTipoCalculo(transferencia);
 		BigDecimal taxaCalculada = tipoCalculo.calculaTaxa();
 		transferencia.setTaxa(taxaCalculada);
 		transferencias.add(transferencia);

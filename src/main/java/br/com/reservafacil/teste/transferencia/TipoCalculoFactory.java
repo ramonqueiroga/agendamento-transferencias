@@ -1,13 +1,11 @@
 package br.com.reservafacil.teste.transferencia;
 
-import java.math.BigDecimal;
-
-import br.com.reservafacil.teste.enums.TipoTransferenciaEnum;
+import br.com.reservafacil.teste.modelo.Transferencia;
 
 public class TipoCalculoFactory {
 	
-	public static ITipoCalculo getTipoCalculo(TipoTransferenciaEnum tipoTransferenciaEnum, BigDecimal valorTransferencia){
-		switch (tipoTransferenciaEnum) {
+	public static ITipoCalculo getTipoCalculo(Transferencia transferencia){
+		switch (transferencia.getTipoTransferenciaEnum()) {
 		case TIPOA:
 			return new CalculoTipoA();
 		case TIPOB:
