@@ -1,4 +1,4 @@
-package br.com.reservafacil.teste.ontroller;
+package br.com.reservafacil.teste.controller;
 
 import javax.inject.Inject;
 
