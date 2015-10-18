@@ -31,8 +31,8 @@ public class TransferenciaController {
 
 	@Path("/")
 	public void index() {
-		result.include("variable", "VRaptor!");
 		result.include("tiposTransferencia", TipoTransferenciaEnum.values());
+		result.include("transferencias", transferencias);
 	}
 	
 	public void adicionaTransferencia(Transferencia transferencia){

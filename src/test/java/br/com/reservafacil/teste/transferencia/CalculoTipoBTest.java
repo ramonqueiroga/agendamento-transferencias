@@ -7,18 +7,13 @@ import org.junit.Test;
 
 import br.com.reservafacil.teste.enums.TipoTransferenciaEnum;
 import br.com.reservafacil.teste.modelo.Transferencia;
-import br.com.reservafacil.teste.utils.DataUtil;
 
 public class CalculoTipoBTest {
 
 	@Test
 	public void TestaSeCalculoTipoBComDiferencaMaiorQueTrintaEstaCorreto() {
-		Transferencia transferencia = new Transferencia();
-		transferencia.setContaOrigem("65432-1");
-		transferencia.setContaDestino("12345-6");
-		transferencia.setValor(new BigDecimal("100"));
-		transferencia.setDataAgendamento(DataUtil.criaDataComSomatorioDeDias(transferencia.getDataCadastro(), 31));
-		transferencia.setTipoTransferenciaEnum(TipoTransferenciaEnum.TIPOB);
+		Transferencia transferencia = TransferenciaBuilderParaTeste.buildTransferencia(
+				new BigDecimal("100"), 31, TipoTransferenciaEnum.TIPOB);
 
 		ITipoCalculo tipoCalculo = TipoCalculoFactory
 				.getTipoCalculo(transferencia);
@@ -28,12 +23,8 @@ public class CalculoTipoBTest {
 	
 	@Test
 	public void TestaSeCalculoTipoBComDiferencaIgualATrintaEstaCorreto() {
-		Transferencia transferencia = new Transferencia();
-		transferencia.setContaOrigem("65432-1");
-		transferencia.setContaDestino("12345-6");
-		transferencia.setValor(new BigDecimal("100"));
-		transferencia.setDataAgendamento(DataUtil.criaDataComSomatorioDeDias(transferencia.getDataCadastro(), 30));
-		transferencia.setTipoTransferenciaEnum(TipoTransferenciaEnum.TIPOB);
+		Transferencia transferencia = TransferenciaBuilderParaTeste.buildTransferencia(
+				new BigDecimal("100"), 30, TipoTransferenciaEnum.TIPOB);		
 
 		ITipoCalculo tipoCalculo = TipoCalculoFactory
 				.getTipoCalculo(transferencia);
@@ -43,12 +34,8 @@ public class CalculoTipoBTest {
 	
 	@Test
 	public void TestaSeCalculoTipoBComDiferencaMenorQueTrintaEstaCorreto() {
-		Transferencia transferencia = new Transferencia();
-		transferencia.setContaOrigem("65432-1");
-		transferencia.setContaDestino("12345-6");
-		transferencia.setValor(new BigDecimal("100"));
-		transferencia.setDataAgendamento(DataUtil.criaDataComSomatorioDeDias(transferencia.getDataCadastro(), 15));
-		transferencia.setTipoTransferenciaEnum(TipoTransferenciaEnum.TIPOB);
+		Transferencia transferencia = TransferenciaBuilderParaTeste.buildTransferencia(
+				new BigDecimal("100"), 15, TipoTransferenciaEnum.TIPOB);		
 
 		ITipoCalculo tipoCalculo = TipoCalculoFactory
 				.getTipoCalculo(transferencia);

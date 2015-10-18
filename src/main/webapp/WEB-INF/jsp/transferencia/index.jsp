@@ -1,4 +1,5 @@
 <%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -31,6 +32,31 @@
 		<input type="submit" value="Enviar" />	
 	
 	</form>
+	
+	<table>
+		<tr>
+			<td>Conta Origem</td>
+			<td>Conta Destino</td>
+			<td>Valor da transferência</td>
+			<td>Taxa</td>
+			<td>Data do agendamento</td>
+			<td>Data do cadastro</td>
+			<td>Tipo</td>
+		</tr>
+		<c:forEach items="${transferencias}" var="transferencia">
+			<tr>
+				<td>${transferencia.contaOrigem}</td>
+				<td>${transferencia.contaDestino}</td>
+				<td>${transferencia.valor}</td>
+				<td>${transferencia.taxa}</td>
+				<td><fmt:formatDate type="date" value="${transferencia.dataAgendamento}"/></td>
+				<td><fmt:formatDate type="date" value="${transferencia.dataCadastro}"/></td>
+				<td>${transferencia.tipoTransferenciaEnum}</td>
+			</tr>
+		</c:forEach>
+	
+	</table>
+	
 	
 </body>
 </html>

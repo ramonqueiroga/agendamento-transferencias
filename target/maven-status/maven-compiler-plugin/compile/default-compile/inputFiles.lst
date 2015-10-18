@@ -1,9 +1,10 @@
-C:\Teste\reservafacil\workspace\agendamento-transferencias\src\main\java\br\com\reservafacil\teste\enums\TipoTaxaEnum.java
+C:\Teste\reservafacil\workspace\agendamento-transferencias\src\main\java\br\com\reservafacil\teste\enums\TipoTransferenciaEnum.java
 C:\Teste\reservafacil\workspace\agendamento-transferencias\src\main\java\br\com\reservafacil\teste\modelo\Transferencia.java
-C:\Teste\reservafacil\workspace\agendamento-transferencias\src\main\java\br\com\reservafacil\teste\transferencia\AbstractTaxa.java
-C:\Teste\reservafacil\workspace\agendamento-transferencias\src\main\java\br\com\reservafacil\teste\transferencia\ITaxa.java
-C:\Teste\reservafacil\workspace\agendamento-transferencias\src\main\java\br\com\reservafacil\teste\transferencia\TaxaFactory.java
+C:\Teste\reservafacil\workspace\agendamento-transferencias\src\main\java\br\com\reservafacil\teste\transferencia\CalculoTipoC.java
+C:\Teste\reservafacil\workspace\agendamento-transferencias\src\main\java\br\com\reservafacil\teste\transferencia\ITipoCalculo.java
 C:\Teste\reservafacil\workspace\agendamento-transferencias\src\main\java\br\com\reservafacil\teste\controller\TransferenciaController.java
-C:\Teste\reservafacil\workspace\agendamento-transferencias\src\main\java\br\com\reservafacil\teste\transferencia\TaxaTipoC.java
-C:\Teste\reservafacil\workspace\agendamento-transferencias\src\main\java\br\com\reservafacil\teste\transferencia\TaxaTipoB.java
-C:\Teste\reservafacil\workspace\agendamento-transferencias\src\main\java\br\com\reservafacil\teste\transferencia\TaxaTipoA.java
+C:\Teste\reservafacil\workspace\agendamento-transferencias\src\main\java\br\com\reservafacil\teste\transferencia\TipoCalculoFactory.java
+C:\Teste\reservafacil\workspace\agendamento-transferencias\src\main\java\br\com\reservafacil\teste\transferencia\CalculoTipoA.java
+C:\Teste\reservafacil\workspace\agendamento-transferencias\src\main\java\br\com\reservafacil\teste\transferencia\CalculoTipoB.java
+C:\Teste\reservafacil\workspace\agendamento-transferencias\src\main\java\br\com\reservafacil\teste\transferencia\AbstractTipoCalculo.java
+C:\Teste\reservafacil\workspace\agendamento-transferencias\src\main\java\br\com\reservafacil\teste\utils\DataUtil.java
