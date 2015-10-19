@@ -12,9 +12,8 @@ public class CalculoTipoBTest {
 
 	@Test
 	public void TestaSeCalculoTipoBComDiferencaMaiorQueTrintaEstaCorreto() {
-		Transferencia transferencia = TransferenciaBuilderParaTeste.buildTransferencia(
+		Transferencia transferencia = TransferenciaBuilder.buildTransferencia(
 				new BigDecimal("100"), 31, TipoTransferenciaEnum.TIPOB);
-
 		ITipoCalculo tipoCalculo = TipoCalculoFactory
 				.getTipoCalculo(transferencia);
 		BigDecimal taxaCalculada = tipoCalculo.calculaTaxa(transferencia);
@@ -23,7 +22,7 @@ public class CalculoTipoBTest {
 	
 	@Test
 	public void TestaSeCalculoTipoBComDiferencaIgualATrintaEstaCorreto() {
-		Transferencia transferencia = TransferenciaBuilderParaTeste.buildTransferencia(
+		Transferencia transferencia = TransferenciaBuilder.buildTransferencia(
 				new BigDecimal("100"), 30, TipoTransferenciaEnum.TIPOB);		
 
 		ITipoCalculo tipoCalculo = TipoCalculoFactory
@@ -34,7 +33,7 @@ public class CalculoTipoBTest {
 	
 	@Test
 	public void TestaSeCalculoTipoBComDiferencaMenorQueTrintaEstaCorreto() {
-		Transferencia transferencia = TransferenciaBuilderParaTeste.buildTransferencia(
+		Transferencia transferencia = TransferenciaBuilder.buildTransferencia(
 				new BigDecimal("100"), 15, TipoTransferenciaEnum.TIPOB);		
 
 		ITipoCalculo tipoCalculo = TipoCalculoFactory

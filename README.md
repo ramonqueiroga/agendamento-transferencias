@@ -5,7 +5,7 @@ Importar projeto no Eclipse como "Existing Maven Projects"
 
 Configurar tomcat versão 7 ou 8
 
-- Ao configurar o Tomcat, caso apareça um erro como: "The superclass 'javax.servlet.HttpServlet' was...", clique com o botão direito no projeto e siga: Properties > Project Facets > Aba Runtimes na parte da direita do pop-up > Selecione o Tomcat na versão que configurou e clique em "Apply" depois em "OK"
+- Ao configurar o Tomcat, caso apareça um erro como: "The superclass 'javax.servlet.HttpServlet' was...", clique com o botão direito no projeto e siga: Properties > Project Facets > Aba Runtimes na parte direita do pop-up > Selecione o Tomcat na versão que configurou e clique em "Apply" depois em "OK"
 
 
 Contexto do projeto: /agendamento-transferencias

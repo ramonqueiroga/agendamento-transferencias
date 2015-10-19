@@ -33,7 +33,7 @@
 	
 	</form>
 	
-	<table>
+	<table style="border:1px double #000;">
 		<tr>
 			<td>Conta Origem</td>
 			<td>Conta Destino</td>
@@ -49,8 +49,8 @@
 				<td>${transferencia.contaDestino}</td>
 				<td>${transferencia.valor}</td>
 				<td>${transferencia.taxa}</td>
-				<td><fmt:formatDate type="date" value="${transferencia.dataAgendamento}"/></td>
-				<td><fmt:formatDate type="date" value="${transferencia.dataCadastro}"/></td>
+				<td><fmt:formatDate type="date" value="${transferencia.dataAgendamento.time}"/></td>
+				<td><fmt:formatDate type="date" value="${transferencia.dataCadastro.time}"/></td>
 				<td>${transferencia.tipoTransferenciaEnum}</td>
 			</tr>
 		</c:forEach>

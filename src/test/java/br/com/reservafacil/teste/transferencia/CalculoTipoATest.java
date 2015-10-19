@@ -1,6 +1,7 @@
 package br.com.reservafacil.teste.transferencia;
 
 import java.math.BigDecimal;
+import java.util.Calendar;
 
 import org.junit.Assert;
 import org.junit.Before;
@@ -20,8 +21,7 @@ public class CalculoTipoATest {
 		transferencia.setContaOrigem("65432-1");
 		transferencia.setContaDestino("12345-6");
 		transferencia.setValor(new BigDecimal("100"));
-		transferencia.setDataAgendamento(DataUtil
-				.criaDataComString("18/10/2015"));
+		transferencia.setDataAgendamento(DataUtil.criaDataComSomatorioDeDias(Calendar.getInstance(), 2));
 		transferencia.setTipoTransferenciaEnum(TipoTransferenciaEnum.TIPOA);
 	}
 

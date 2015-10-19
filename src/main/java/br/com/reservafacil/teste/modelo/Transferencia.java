@@ -1,8 +1,7 @@
 package br.com.reservafacil.teste.modelo;
 
 import java.math.BigDecimal;
-import java.util.Date;
-
+import java.util.Calendar;
 import br.com.reservafacil.teste.enums.TipoTransferenciaEnum;
 
 public class Transferencia {
@@ -11,10 +10,18 @@ public class Transferencia {
 	private String contaDestino;
 	private BigDecimal valor;
 	private BigDecimal taxa;
-	private Date dataAgendamento;
-	private Date dataCadastro = new Date();
+	private Calendar dataAgendamento;
+	private Calendar dataCadastro;
 	private TipoTransferenciaEnum tipoTransferenciaEnum;
 
+	public Transferencia(){
+		this.dataCadastro = Calendar.getInstance();
+		this.dataCadastro.set(Calendar.HOUR_OF_DAY, 0);
+		this.dataCadastro.set(Calendar.MINUTE, 0);
+		this.dataCadastro.set(Calendar.SECOND, 0);
+		this.dataCadastro.set(Calendar.MILLISECOND, 0);
+	}
+	
 	public String getContaOrigem() {
 		return contaOrigem;
 	}
@@ -55,15 +62,15 @@ public class Transferencia {
 		this.taxa = taxa;
 	}
 
-	public Date getDataAgendamento() {
+	public Calendar getDataAgendamento() {
 		return dataAgendamento;
 	}
 
-	public void setDataAgendamento(Date dataAgendamento) {
+	public void setDataAgendamento(Calendar dataAgendamento) {
 		this.dataAgendamento = dataAgendamento;
 	}
 
-	public Date getDataCadastro() {
+	public Calendar getDataCadastro() {
 		return dataCadastro;
 	}
 
