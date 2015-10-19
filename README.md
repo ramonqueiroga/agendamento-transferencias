@@ -35,3 +35,6 @@ OBS: Não usar Tomcat 6
 
 ### Eclipse Luna como IDE
 - Foi utilizado o Eclipse Luna para o desenvolvimento do código por se tratar de uma ferramenta que estou familiarizado.
+
+### Git Bash
+- Foi utilizado o Git Bash para fazer os commits do projeto no GitHub, pois é uma ferramenta leve, simples e rápida.
