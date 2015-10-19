@@ -1,4 +1,0 @@
--------------------------------------------------------------------------------
-Test set: br.com.reservafacil.teste.transferencia.CalculoTipoCTest
--------------------------------------------------------------------------------
-Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
