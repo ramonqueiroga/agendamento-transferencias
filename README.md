@@ -11,7 +11,7 @@ Configurar tomcat versão 7 ou 8
 Contexto do projeto: /agendamento-transferencias
 
 
-# Decisões arquiteturais
+### Decisões arquiteturais
 - Utilizei uma estratégia onde o objetivo foi separar ao máximo as responsabilidades entre as classes, diminuindo o acoplamento e aumentando a coesão. Outra preocupação foi deixar o código flexível para uma futura criação de novas regras de cálculos e manutenção do código. Caso apareça uma situação dessas, o impacto no projeto é pequeno. Dentro dessa estratégia foram utilizados alguns padrões de projetos como Factory e Strategy.
 
 # Linguagem utilizada para desenvolvimento do projeto: Java 7
