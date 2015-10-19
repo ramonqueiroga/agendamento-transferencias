@@ -1,13 +1,27 @@
-# VRaptor blank project
+# Projeto de Agendamento de Transferências
 
-This is a blank project to help you to use VRaptor. You can easily import in you IDE as Maven project.
+Contexto do projeto: /agendamento-transferencias
 
-Este é um projeto em branco para ajudar você a usar o VRaptor. Você pode facilmente importá-lo na sua IDE favorita como um projeto Maven.
+# Decisões arquiteturais
+- Utilizei uma estratégia onde o intuíto foi separar ao máximo as responsabilidades entre as classes, diminuindo o acoplamento e aumentando a coesão. Outra preocupação foi deixar o código flexível para uma futura criação de novas regras de cálculos e manuteñção do código. Caso apareça uma situação dessas, o impacto no projeto é pequeno. Dentro dessa estratégia foram utilizados alguns padrões de projetos como Factory e Strategy.
 
-Após criar seu projeto você pode rodá-lo com um tomcat7 ou +:
+# Linguagem utilizada para desenvolvimento do projeto: Java 7
+- A ideia inicial era utilizar o Java 8 para uma melhor manipulação das datas, mas aconteceram alguns problemas com o VRaptor na hora de receber o valor da data para um atributo do tipo LocalDate. Com isso resolvi utilizar a versão 7 do Java para evitar possíveis novos problemas.
 
-```
-mvn tomcat7:run
-```
+# Framework utilizado: VRaptor 4
+- Utilização do framework para criar uma tela funcional básica onde o usuário faz o input dos dados e verifica na hora todas as transferências cadastradas. Não me preocupei muito com a validação das informações e formatação porque entendi que esse não era o objetivo central do teste.
 
-Cuidado para *jamais* executar `mvn tomcat:run` pois ele usará um tomcat6 (incompatível).
+# Ferramenta de Build e Gestão de dependências utilizada: Maven 3.1
+- Foi utilizado o Maven na versão 3.1 pois essa é a versão padrão utilizada nessa versão do VRaptor 4.
+
+# Biblioteca Joda-Time 2.8.2
+- Utilizada a ultima versão da biblioteca Joda-Time para maior facilidade em manipular as datas.
+
+# Testes unitários com JUnit 4.11
+- Foi utilizado uma das versões mais novas do JUnit para realização dos testes unitários. 
+
+# Servidor de aplicação utilizado: Tomcat 8.0
+- Foi utilizado a versão 8 do tomcat, pois o VRaptor 4 só aceita versões da 7 em diante. 
+OBS: Não usar Tomcat 6
+
+

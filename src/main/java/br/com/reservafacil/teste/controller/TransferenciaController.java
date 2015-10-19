@@ -23,7 +23,7 @@ public class TransferenciaController {
 	protected TransferenciaController() {
 		this(null);
 	}
-	
+	 
 	@Inject
 	public TransferenciaController(Result result) {
 		this.result = result;
